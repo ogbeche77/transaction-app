@@ -29,6 +29,7 @@ class Login extends React.Component {
                     signin_error: ''
                 }
             });
+
             // login successful
         }
     };
@@ -45,7 +46,7 @@ class Login extends React.Component {
         const { errorMsg } = this.state;
         return (
             <div className="login-page">
-                <h1>Banking Application</h1>
+                <h1>Transaction Application</h1>
                 <div className="login-form">
                     <Form onSubmit={this.handleLogin}>
                         {errorMsg && errorMsg.signin_error && (
@@ -54,7 +55,7 @@ class Login extends React.Component {
                             </p>
                         )}
                         <Form.Group controlId="email">
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Label>Email </Form.Label>
                             <Form.Control
                                 type="email"
                                 name="email"
