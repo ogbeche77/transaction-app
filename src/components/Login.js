@@ -30,7 +30,7 @@ class Login extends React.Component {
                 }
             });
 
-            // login successful
+
         }
     };
 
